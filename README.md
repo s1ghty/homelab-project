@@ -1,31 +1,34 @@
-# Homelab project
+# homelab-project
 
-Personal homelab built on a repurposed laptop (Huawei Matebook 13) for learning Linux, networking, and self-hosting.
+Homelab project built on a repurposed laptop to learn Linux administration, networking, and self-hosting.  
+Current focus: secure remote access (SSH) and private networking (Tailscale).
 
-## Current stage (Day 1)
-✅ Ubuntu Server installed  
-✅ OpenSSH installed + key-based SSH access working  
-✅ Tailscale installed + remote access working (me + friend)  
-✅ Laptop configured to keep running with lid closed  
+## Current status (Day 1)
+- ✅ Installed Ubuntu Server on the host laptop
+- ✅ Installed + enabled OpenSSH Server
+- ✅ Verified local SSH access
+- ✅ Installed Tailscale (official install script)
+- ✅ Added server + clients to the same tailnet (me + friend)
+- ✅ Set up SSH keys for login
+- ✅ Configured laptop to keep running with lid closed (so it stays reachable)
 
-## Hardware
-- Host: Huawei Matebook 13
-- CPU: AMD Ryzen 5 3500U
-- RAM: 16 GB
-- Storage: 512 GB SSD
-- Network: Wi‑Fi only (no Ethernet port)
+## Hardware (current host)
+- Huawei Matebook 13
+- AMD Ryzen 5 3500U
+- 16 GB RAM
+- 512 GB SSD
+- Wi‑Fi only (no Ethernet port)
 
-## Access
-- **Primary remote access:** SSH over Tailscale
-- Docs:
+## Documentation
+- Project log:
+  - [2026-02-06 — Day 1: Ubuntu Server + SSH + Tailscale](docs/updates/2026-02-06-day-1.md)
+- Network:
   - [SSH](docs/network/ssh.md)
   - [Tailscale](docs/network/tailscale.md)
-  - [Access/Security notes](docs/security/access.md)
+- Security:
+  - [Access & security notes](docs/security/access.md)
 
-## Project log
-- [2026-02-06 — Day 1: Base server, SSH, Tailscale](docs/updates/2026-02-06-day-1.md)
-
-## Next goals
-- Document current configuration (this repo)
-- Basic hardening (disable password SSH, firewall review)
-- Pick and deploy first services (likely Docker + a dashboard + monitoring)
+## Next steps (planned)
+- SSH hardening (disable password auth, confirm root login policy)
+- Firewall baseline (UFW) once service ports are known
+- Choose first services to self-host (likely Docker + a dashboard + monitoring)

@@ -1,4 +1,4 @@
-# homelab-project
+# Homelab project
 
 Personal homelab built on a repurposed laptop (Huawei Matebook 13) for learning Linux, networking, and self-hosting.
 

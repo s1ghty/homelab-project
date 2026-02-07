@@ -1,10 +1,10 @@
-# homelab-project
+# Homelab-project
 
 Homelab project built on a repurposed laptop to learn Linux administration, networking, and self-hosting.  
 Current focus: secure remote access (SSH) and private networking (Tailscale).
 
 ## Current status (Day 1)
-- ✅ Installed Ubuntu Server on the host laptop
+- ✅ Installed Ubuntu Server (LTS 24.04) on the host laptop
 - ✅ Installed + enabled OpenSSH Server
 - ✅ Verified local SSH access
 - ✅ Installed Tailscale (official install script)
